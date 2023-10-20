@@ -12,5 +12,8 @@ document.getElementById("filter-button").addEventListener("click", function () {
         });
     });
 
-    text.textContent = filteredWords.join(" ");
+    // Выводим отфильтрованные слова в новом окне
+    const newWindow = window.open("", "filteredWords", "width=400,height=400");
+    newWindow.document.write("<h2>Слова, в которых есть введенные буквы:</h2>");
+    newWindow.document.write("<p>" + filteredWords.join(" ") + "</p>");
 });
