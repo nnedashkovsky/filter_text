@@ -1,17 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Фильтрация текста</title>
+    <title>Фильтр текста на старославянском языке</title>
 </head>
 <body>
-    <h1>Фильтрация текста на старославянском</h1>
-    <label for="text-input">Ввести буквы на старославянском:</label>
-    <input type="text" id="text-input" placeholder="Введи буквы">
-    <button id="filter-button">Фильтровать</button>
-    <div id="filtered-text"></div>
-    <script src="script.js"></script>
+    <h1>Фильтр текста на старославянском яазыке</h1>
+
+    <label for="letters">Введите буквы для фильтрации (без пробелов):</label>
+    <input type="text" id="inputLetters">
+
+    <br>
+
+    <label for="fileInput">Загрузите текст из файла:</label>
+    <input type="file" id="fileInput">
+    
+    <br>
+
+    <button id="filterButton">Отфильтровать</button>
+
+    <h2>Отфильтрованный текст:</h2>
+    <div id="filteredText"></div>
+
+    <script src="filtering.js"></script>
 </body>
 </html>
